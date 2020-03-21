@@ -51,6 +51,8 @@
         <Compile Include="Code\AdminPanel\LoginBlock\ILoginService.cs" />
         <Compile Include="Code\AdminPanel\LoginBlock\LoginService.cs" />
         <Compile Include="Code\DataStorage\DataStorage.cs" />
+        <Compile Include="Code\LessonsPanel\ILessonsServices.cs" />
+        <Compile Include="Code\LessonsPanel\LessonsServices.cs" />
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>

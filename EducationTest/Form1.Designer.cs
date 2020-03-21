@@ -43,7 +43,9 @@
       this.label1 = new System.Windows.Forms.Label();
       this.AdminPasswordInput = new System.Windows.Forms.TextBox();
       this.AdminUsernameInput = new System.Windows.Forms.TextBox();
+      this.LessonsLableLessonsPlace = new System.Windows.Forms.Label();
       this.tabControl1.SuspendLayout();
+      this.lessons.SuspendLayout();
       this.Admin.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -70,13 +72,14 @@
       // 
       // lessons
       // 
-      this.lessons.Location = new System.Drawing.Point(4, 22);
+      this.lessons.BackColor = System.Drawing.Color.WhiteSmoke;
+      this.lessons.Controls.Add(this.LessonsLableLessonsPlace);
+      this.lessons.Location = new System.Drawing.Point(4, 24);
       this.lessons.Name = "lessons";
       this.lessons.Padding = new System.Windows.Forms.Padding(3);
-      this.lessons.Size = new System.Drawing.Size(901, 472);
+      this.lessons.Size = new System.Drawing.Size(901, 470);
       this.lessons.TabIndex = 1;
       this.lessons.Text = "Lessons";
-      this.lessons.UseVisualStyleBackColor = true;
       // 
       // Admin
       // 
@@ -209,6 +212,15 @@
       this.AdminUsernameInput.TabIndex = 0;
       this.AdminUsernameInput.Text = "Admin";
       // 
+      // LessonsLableLessonsPlace
+      // 
+      this.LessonsLableLessonsPlace.BackColor = System.Drawing.SystemColors.Window;
+      this.LessonsLableLessonsPlace.Enabled = false;
+      this.LessonsLableLessonsPlace.Location = new System.Drawing.Point(27, 23);
+      this.LessonsLableLessonsPlace.Name = "LessonsLableLessonsPlace";
+      this.LessonsLableLessonsPlace.Size = new System.Drawing.Size(853, 431);
+      this.LessonsLableLessonsPlace.TabIndex = 0;
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -218,6 +230,7 @@
       this.Name = "Form1";
       this.Text = "Form1";
       this.tabControl1.ResumeLayout(false);
+      this.lessons.ResumeLayout(false);
       this.Admin.ResumeLayout(false);
       this.Admin.PerformLayout();
       this.ResumeLayout(false);
@@ -238,9 +251,11 @@
     private System.Windows.Forms.TextBox AdminInputFileLoadedStatus;
     private System.Windows.Forms.TextBox AdminUsernameInput;
     private System.Windows.Forms.Label AdminLabelFilePath;
-    public System.Windows.Forms.Button AdminButtonLoadNewTestFile;
-    public System.Windows.Forms.TextBox AdminInputFilePath;
     public System.Windows.Forms.TextBox AdminInputStatusConnection;
+    public System.Windows.Forms.TextBox AdminInputFilePath;
+    public System.Windows.Forms.Button AdminButtonLoadNewTestFile;
+    
+    public System.Windows.Forms.Label LessonsLableLessonsPlace;
   }
 }
 
