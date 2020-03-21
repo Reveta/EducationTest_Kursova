@@ -29,6 +29,7 @@
     private void InitializeComponent() {
       this.tabControl1 = new System.Windows.Forms.TabControl();
       this.Test = new System.Windows.Forms.TabPage();
+      this.label4 = new System.Windows.Forms.Label();
       this.lessons = new System.Windows.Forms.TabPage();
       this.LessonsLableLessonsPlace = new System.Windows.Forms.Label();
       this.Admin = new System.Windows.Forms.TabPage();
@@ -44,7 +45,6 @@
       this.label1 = new System.Windows.Forms.Label();
       this.AdminPasswordInput = new System.Windows.Forms.TextBox();
       this.AdminUsernameInput = new System.Windows.Forms.TextBox();
-      this.label4 = new System.Windows.Forms.Label();
       this.tabControl1.SuspendLayout();
       this.Test.SuspendLayout();
       this.lessons.SuspendLayout();
@@ -64,6 +64,7 @@
       // 
       // Test
       // 
+      this.Test.BackColor = System.Drawing.Color.WhiteSmoke;
       this.Test.Controls.Add(this.label4);
       this.Test.Location = new System.Drawing.Point(4, 24);
       this.Test.Name = "Test";
@@ -71,16 +72,26 @@
       this.Test.Size = new System.Drawing.Size(901, 470);
       this.Test.TabIndex = 0;
       this.Test.Text = "Test";
-      this.Test.UseVisualStyleBackColor = true;
+      // 
+      // label4
+      // 
+      this.label4.Font = new System.Drawing.Font("Segoe UI", 19F);
+      this.label4.Location = new System.Drawing.Point(281, 27);
+      this.label4.Name = "label4";
+      this.label4.Size = new System.Drawing.Size(328, 45);
+      this.label4.TabIndex = 0;
+      this.label4.Text = "label4";
+      this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      this.label4.Click += new System.EventHandler(this.label4_Click);
       // 
       // lessons
       // 
       this.lessons.BackColor = System.Drawing.Color.WhiteSmoke;
       this.lessons.Controls.Add(this.LessonsLableLessonsPlace);
-      this.lessons.Location = new System.Drawing.Point(4, 22);
+      this.lessons.Location = new System.Drawing.Point(4, 24);
       this.lessons.Name = "lessons";
       this.lessons.Padding = new System.Windows.Forms.Padding(3);
-      this.lessons.Size = new System.Drawing.Size(901, 472);
+      this.lessons.Size = new System.Drawing.Size(901, 470);
       this.lessons.TabIndex = 1;
       this.lessons.Text = "Lessons";
       // 
@@ -181,6 +192,8 @@
       this.AdminInputStatusConnection.TabIndex = 5;
       this.AdminInputStatusConnection.Text = "Not Connection ";
       this.AdminInputStatusConnection.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+      this.AdminInputStatusConnection.TextChanged +=
+        new System.EventHandler(this.AdminInputStatusConnection_TextChanged);
       // 
       // AdminConnectButton
       // 
@@ -225,16 +238,6 @@
       this.AdminUsernameInput.TabIndex = 0;
       this.AdminUsernameInput.Text = "Admin";
       // 
-      // label4
-      // 
-      this.label4.Font = new System.Drawing.Font("Segoe UI", 19F);
-      this.label4.Location = new System.Drawing.Point(309, 23);
-      this.label4.Name = "label4";
-      this.label4.Size = new System.Drawing.Size(328, 45);
-      this.label4.TabIndex = 0;
-      this.label4.Text = "label4";
-      this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -267,10 +270,10 @@
     private System.Windows.Forms.TextBox AdminUsernameInput;
     private System.Windows.Forms.Label AdminLabelFilePath;
     private System.Windows.Forms.Label label4;
-    public System.Windows.Forms.Label LessonsLableLessonsPlace;
-    public System.Windows.Forms.Button AdminButtonLoadNewTestFile;
-    public System.Windows.Forms.TextBox AdminInputFilePath;
     public System.Windows.Forms.TextBox AdminInputStatusConnection;
+    public System.Windows.Forms.TextBox AdminInputFilePath;
+    public System.Windows.Forms.Button AdminButtonLoadNewTestFile;
+    public System.Windows.Forms.Label LessonsLableLessonsPlace;
   }
 }
 

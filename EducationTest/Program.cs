@@ -17,7 +17,7 @@ namespace EducationTest {
 		[STAThread]
 		static void Main() {
 
-			DataStorage.TestFilePath = "resources\\lessonFile.txt";
+			DataStorage.LessonFilePath = "resources\\lessonFile.txt";
 			
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);

@@ -57,6 +57,7 @@
         <Compile Include="Code\TestPage\InfoObjects\TestBlock.cs" />
         <Compile Include="Code\TestPage\InfoObjects\TestOne.cs" />
         <Compile Include="Code\TestPage\ITestServices.cs" />
+        <Compile Include="Code\TestPage\TestServices.cs" />
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>

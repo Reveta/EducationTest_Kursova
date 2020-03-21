@@ -19,7 +19,7 @@ namespace EducationTest {
 			this._loginService = loginService;
 			this._adminService = adminService;
 			this._lessonsServices = lessonsServices;
-			lessonsServices.LoadLessonsFile(this, DataStorage.TestFilePath);
+			lessonsServices.LoadLessonsFile(this, DataStorage.LessonFilePath);
 		}
 
 		private void button1_Click(object sender, EventArgs e) {

@@ -4,5 +4,6 @@ namespace EducationTest.Code.DataStorage {
 	public class DataStorage {
 		public static bool ConnectionStatus = false;
 		public static string TestFilePath = "";
+		public static string LessonFilePath = "";
 	}
 }
