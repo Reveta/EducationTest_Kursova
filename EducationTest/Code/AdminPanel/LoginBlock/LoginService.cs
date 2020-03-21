@@ -1,4 +1,5 @@
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace EducationTest.Code.AdminPanel.LoginBlock {
@@ -18,6 +19,7 @@ namespace EducationTest.Code.AdminPanel.LoginBlock {
 			string statusFalse = "in not connected";
 
 			form1.AdminInputStatusConnection.Text = status ? statusTrue : statusFalse;
+			form1.AdminInputStatusConnection.BackColor = status ? Color.Chartreuse : Color.Red;
 		}
 	}
 }

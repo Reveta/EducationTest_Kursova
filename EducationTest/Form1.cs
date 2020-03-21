@@ -36,5 +36,6 @@ namespace EducationTest {
 
 			this._loginService.ChangeConnectionStatus(this, checkLogin);
 		}
+
 	}
 }

@@ -1,3 +1,4 @@
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -9,6 +10,7 @@ namespace EducationTest.Code.LessonsPanel {
 
 			if (exists) {
 				string text = File.ReadAllText(lessonsFilePath);
+				form1.LessonsLableLessonsPlace.ForeColor = Color.Black;
 				form1.LessonsLableLessonsPlace.Text = text;
 			}
 		}

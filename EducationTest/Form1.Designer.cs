@@ -30,6 +30,7 @@
       this.tabControl1 = new System.Windows.Forms.TabControl();
       this.Test = new System.Windows.Forms.TabPage();
       this.lessons = new System.Windows.Forms.TabPage();
+      this.LessonsLableLessonsPlace = new System.Windows.Forms.Label();
       this.Admin = new System.Windows.Forms.TabPage();
       this.AdminButtonLoadNewTestFile = new System.Windows.Forms.Button();
       this.AdminLabelFilePath = new System.Windows.Forms.Label();
@@ -43,8 +44,9 @@
       this.label1 = new System.Windows.Forms.Label();
       this.AdminPasswordInput = new System.Windows.Forms.TextBox();
       this.AdminUsernameInput = new System.Windows.Forms.TextBox();
-      this.LessonsLableLessonsPlace = new System.Windows.Forms.Label();
+      this.label4 = new System.Windows.Forms.Label();
       this.tabControl1.SuspendLayout();
+      this.Test.SuspendLayout();
       this.lessons.SuspendLayout();
       this.Admin.SuspendLayout();
       this.SuspendLayout();
@@ -62,6 +64,7 @@
       // 
       // Test
       // 
+      this.Test.Controls.Add(this.label4);
       this.Test.Location = new System.Drawing.Point(4, 24);
       this.Test.Name = "Test";
       this.Test.Padding = new System.Windows.Forms.Padding(3);
@@ -74,12 +77,21 @@
       // 
       this.lessons.BackColor = System.Drawing.Color.WhiteSmoke;
       this.lessons.Controls.Add(this.LessonsLableLessonsPlace);
-      this.lessons.Location = new System.Drawing.Point(4, 24);
+      this.lessons.Location = new System.Drawing.Point(4, 22);
       this.lessons.Name = "lessons";
       this.lessons.Padding = new System.Windows.Forms.Padding(3);
-      this.lessons.Size = new System.Drawing.Size(901, 470);
+      this.lessons.Size = new System.Drawing.Size(901, 472);
       this.lessons.TabIndex = 1;
       this.lessons.Text = "Lessons";
+      // 
+      // LessonsLableLessonsPlace
+      // 
+      this.LessonsLableLessonsPlace.BackColor = System.Drawing.SystemColors.Window;
+      this.LessonsLableLessonsPlace.Enabled = false;
+      this.LessonsLableLessonsPlace.Location = new System.Drawing.Point(27, 23);
+      this.LessonsLableLessonsPlace.Name = "LessonsLableLessonsPlace";
+      this.LessonsLableLessonsPlace.Size = new System.Drawing.Size(853, 432);
+      this.LessonsLableLessonsPlace.TabIndex = 0;
       // 
       // Admin
       // 
@@ -168,6 +180,7 @@
       this.AdminInputStatusConnection.Size = new System.Drawing.Size(139, 16);
       this.AdminInputStatusConnection.TabIndex = 5;
       this.AdminInputStatusConnection.Text = "Not Connection ";
+      this.AdminInputStatusConnection.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
       // 
       // AdminConnectButton
       // 
@@ -212,14 +225,15 @@
       this.AdminUsernameInput.TabIndex = 0;
       this.AdminUsernameInput.Text = "Admin";
       // 
-      // LessonsLableLessonsPlace
+      // label4
       // 
-      this.LessonsLableLessonsPlace.BackColor = System.Drawing.SystemColors.Window;
-      this.LessonsLableLessonsPlace.Enabled = false;
-      this.LessonsLableLessonsPlace.Location = new System.Drawing.Point(27, 23);
-      this.LessonsLableLessonsPlace.Name = "LessonsLableLessonsPlace";
-      this.LessonsLableLessonsPlace.Size = new System.Drawing.Size(853, 431);
-      this.LessonsLableLessonsPlace.TabIndex = 0;
+      this.label4.Font = new System.Drawing.Font("Segoe UI", 19F);
+      this.label4.Location = new System.Drawing.Point(309, 23);
+      this.label4.Name = "label4";
+      this.label4.Size = new System.Drawing.Size(328, 45);
+      this.label4.TabIndex = 0;
+      this.label4.Text = "label4";
+      this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
       // 
       // Form1
       // 
@@ -230,6 +244,7 @@
       this.Name = "Form1";
       this.Text = "Form1";
       this.tabControl1.ResumeLayout(false);
+      this.Test.ResumeLayout(false);
       this.lessons.ResumeLayout(false);
       this.Admin.ResumeLayout(false);
       this.Admin.PerformLayout();
@@ -251,11 +266,11 @@
     private System.Windows.Forms.TextBox AdminInputFileLoadedStatus;
     private System.Windows.Forms.TextBox AdminUsernameInput;
     private System.Windows.Forms.Label AdminLabelFilePath;
-    public System.Windows.Forms.TextBox AdminInputStatusConnection;
-    public System.Windows.Forms.TextBox AdminInputFilePath;
-    public System.Windows.Forms.Button AdminButtonLoadNewTestFile;
-    
+    private System.Windows.Forms.Label label4;
     public System.Windows.Forms.Label LessonsLableLessonsPlace;
+    public System.Windows.Forms.Button AdminButtonLoadNewTestFile;
+    public System.Windows.Forms.TextBox AdminInputFilePath;
+    public System.Windows.Forms.TextBox AdminInputStatusConnection;
   }
 }
 
