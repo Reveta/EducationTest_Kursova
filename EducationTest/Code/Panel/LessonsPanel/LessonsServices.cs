@@ -2,7 +2,7 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
-namespace EducationTest.Code.LessonsPanel {
+namespace EducationTest.Code.Panel.LessonsPanel {
 	public class LessonsServices : ILessonsServices{
 		public void LoadLessonsFile(Form form, string lessonsFilePath) {
 			Form1 form1 = form as Form1;

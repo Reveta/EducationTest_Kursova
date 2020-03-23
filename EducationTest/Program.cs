@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using EducationTest.Code.AdminPanel;
-using EducationTest.Code.AdminPanel.AdminBlock;
-using EducationTest.Code.AdminPanel.LoginBlock;
 using EducationTest.Code.DataStorage;
-using EducationTest.Code.LessonsPanel;
+using EducationTest.Code.Panel.AdminPanel.AdminBlock;
+using EducationTest.Code.Panel.AdminPanel.LoginBlock;
+using EducationTest.Code.Panel.LessonsPanel;
+using EducationTest.Code.Panel.ResultPanel;
+using EducationTest.Code.Panel.TestPanel;
 
 namespace EducationTest {
 	static class Program {
@@ -16,12 +14,16 @@ namespace EducationTest {
 		/// </summary>
 		[STAThread]
 		static void Main() {
-
 			DataStorage.LessonFilePath = "resources\\lessonFile.txt";
-			
+
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1(new LoginService(), new AdminService(), new LessonsServices()));
+			Application.Run(new Form1(
+				new LoginService(),
+				new AdminService(),
+				new LessonsServices(),
+				new TestServices(),
+				new ResultService()));
 		}
 	}
 }

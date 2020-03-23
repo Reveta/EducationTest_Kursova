@@ -33,8 +33,17 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="LiteDB, Version=5.0.4.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27">
+          <HintPath>..\packages\LiteDB.5.0.4\lib\net45\LiteDB.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+          <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
+        <Reference Include="System.Runtime" />
         <Reference Include="System.Xml.Linq" />
         <Reference Include="System.Data.DataSetExtensions" />
         <Reference Include="Microsoft.CSharp" />
@@ -46,18 +55,24 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Code\AdminPanel\AdminBlock\AdminService.cs" />
-        <Compile Include="Code\AdminPanel\AdminBlock\IAdminService.cs" />
-        <Compile Include="Code\AdminPanel\LoginBlock\ILoginService.cs" />
-        <Compile Include="Code\AdminPanel\LoginBlock\LoginService.cs" />
+        <Compile Include="Code\DataStorage\DataBase\JsonManager\JsonReader.cs" />
+        <Compile Include="Code\DataStorage\DataBase\LiteDB\LiteDBConfig.cs" />
+        <Compile Include="Code\DataStorage\DataBase\LiteDB\LiteDBManager.cs" />
         <Compile Include="Code\DataStorage\DataStorage.cs" />
-        <Compile Include="Code\LessonsPanel\ILessonsServices.cs" />
-        <Compile Include="Code\LessonsPanel\LessonsServices.cs" />
-        <Compile Include="Code\TestPage\InfoObjects\TestAnswers.cs" />
-        <Compile Include="Code\TestPage\InfoObjects\TestBlock.cs" />
-        <Compile Include="Code\TestPage\InfoObjects\TestOne.cs" />
-        <Compile Include="Code\TestPage\ITestServices.cs" />
-        <Compile Include="Code\TestPage\TestServices.cs" />
+        <Compile Include="Code\Panel\AdminPanel\AdminBlock\AdminService.cs" />
+        <Compile Include="Code\Panel\AdminPanel\AdminBlock\IAdminService.cs" />
+        <Compile Include="Code\Panel\AdminPanel\LoginBlock\ILoginService.cs" />
+        <Compile Include="Code\Panel\AdminPanel\LoginBlock\LoginService.cs" />
+        <Compile Include="Code\Panel\LessonsPanel\ILessonsServices.cs" />
+        <Compile Include="Code\Panel\LessonsPanel\LessonsServices.cs" />
+        <Compile Include="Code\Panel\ResultPanel\IResultService.cs" />
+        <Compile Include="Code\Panel\ResultPanel\ResultService.cs" />
+        <Compile Include="Code\Panel\TestPanel\InfoObjects\TestAnswers.cs" />
+        <Compile Include="Code\Panel\TestPanel\InfoObjects\TestBlock.cs" />
+        <Compile Include="Code\Panel\TestPanel\InfoObjects\TestOne.cs" />
+        <Compile Include="Code\Panel\TestPanel\InfoObjects\TestResultOne.cs" />
+        <Compile Include="Code\Panel\TestPanel\ITestServices.cs" />
+        <Compile Include="Code\Panel\TestPanel\TestServices.cs" />
         <Compile Include="Form1.cs">
             <SubType>Form</SubType>
         </Compile>
@@ -78,6 +93,7 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
+        <None Include="packages.config" />
         <None Include="Properties\Settings.settings">
             <Generator>SettingsSingleFileGenerator</Generator>
             <LastGenOutput>Settings.Designer.cs</LastGenOutput>

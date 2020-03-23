@@ -1,8 +1,7 @@
-using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace EducationTest.Code.AdminPanel.LoginBlock {
+namespace EducationTest.Code.Panel.AdminPanel.LoginBlock {
 	public class LoginService : ILoginService{
 		
 		public bool CheckLogin(string username, string password) {
